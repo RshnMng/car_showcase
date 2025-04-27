@@ -3,10 +3,10 @@ import { CustomButtonProps } from '@/types';
 import Image from 'next/image';
 "use Client";
 
-const CustomButton = ({title, containerStyles, handleClick} : CustomButtonProps) => {
+const CustomButton = ({title, containerStyles, handleClick, btnType} : CustomButtonProps) => {
 
   return (
-    <button type='button' onClick={handleClick} className={containerStyles}>
+    <button type={btnType} onClick={handleClick} className={containerStyles}>
                      <span>{title}</span>
 
     </button>
